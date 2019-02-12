@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kalkulator</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css"> 
+	<script src="kalkulator.js"></script>
+</head>
+<body>
+	<div class="main">
+		<center>
+			<div class="title">Kalkulator</div>
+		</center>
+		<div class="form-group">
+	      	<input type="text" class="form-control" id="display"  readonly>
+	    </div>
+	    <div class="form-group">
+	    	<table>
+	    		<tr>
+	    			<td><button class="kal" id="7" value="7" onclick="Angka('7')"/>7</button></td>
+	    			<td><button class="kal id="8" value="8" onclick="Angka('8')">8</button></td>
+	    			<td><button class="kal id="9" value="9" onclick="Angka('9')">9</button></td>
+	    			<td><button class="kal id="min" value="-" onclick="Operator('-');">-</button></td>
+	    		</tr>
+	    		<tr>
+	    			<td><button class="kal id="4" value="4" onclick="Angka('4')">4</button></td>
+	    			<td><button class="kal id="5" value="5" onclick="Angka('5')">5</button></td>
+	    			<td><button class="kal id="6" value="6" onclick="Angka('6')">6</button></td>
+	    			<td><button class="kal id="x" value="x" onclick="Operator('*');">x</button></td>
+	    		</tr>
+	    		<tr>
+	    			<td><button class="kal id="1" value="1" onclick="Angka('1')">1</button></td>
+	    			<td><button class="kal id="2" value="2" onclick="Angka('2')">2</button></td>
+	    			<td><button class="kal id="3" value="3" onclick="Angka('3')">3</button></td>
+	    			<td><button class="kal id="/" value="/" onclick="Operator('/');">/</button></td>
+	    		</tr>
+	    		<tr>
+	    			<td colspan="2"><button class="kal id="0" value="0" onclick="Angka()">0</button></td>
+	    			
+	    			<td><button class="kal id="=" value="=" onclick="Hitung()">=</button></td>
+	    			<td><button class="kal id="+" value="+" onclick="Operator('+');">+</button></td>
+	    		</tr>
+	    	</table>
+	    </div>
+</body>
+</html>
